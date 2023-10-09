@@ -1,7 +1,7 @@
 use std::{fs, io::Read};
 
 fn main() {
-    let mut file = match fs::File::open("/Users/bogdan/projects/AoC-2022/input/day1.txt") {
+    let mut file = match fs::File::open("./day1.txt") {
         Ok(file) => file,
         Err(err) => panic!("could not open file: {}", err),
     };
